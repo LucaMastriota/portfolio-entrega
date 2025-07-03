@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: inter, sans-serif;
+      background: linear-gradient(to bottom, #1d0032, #2a0047);
+      color: white;
+    }
+
+    .contenedorcontacto {
+      width: 1360px;
+      margin: 0 auto;
+      background-color: #1a0033;
+    }
+
+    header {
+      background-image: url('imagenes/header.png');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 150px;
+      width: 100%;
+    }
+
+    header nav {
+      padding-left: 150px;
+      padding-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #d6a8ff;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    form {
+      background: linear-gradient(135deg, #650064, #3b0053);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 25px rgba(162, 0, 255, 0.5);
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+
+    form div {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      flex: 1;
+    }
+
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    button {
+      background-color: #2d003f;
+      color: white;
+      border: none;
+      padding: 15px 150px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button:hover {
+      background-color: #450060;
+    }
+
+    footer {
+      background-color: #22003a;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer a img {
+      height: 30px;
+      margin: 0 10px;
+      transition: transform 0.2s ease;
+    }
+
+    footer a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedorcontacto">
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#sobremi">Sobre mí</a></li>
+          <li><a href="experiencia-estudios.html">Experiencia laboral y estudios</a></li>
+          <li><a href="trabajos.html">Trabajos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Formulario -->
+    <section>
+      <form action="#" method="post">
+        <h2>Let’s Talk!</h2>
+        <div>
+          <input type="text" name="nombre" placeholder="Nombre y Apellido">
+          <input type="email" name="email" placeholder="e-mail">
+        </div>
+        <div>
+          <input type="text" name="asunto" placeholder="Asunto">
+        </div>
+        <div>
+          <textarea name="mensaje" placeholder="Escribí tu mensaje..."></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Redes sociales</p>
+      <a href="https://miro.medium.com/v2/resize:fit:1200/1*rIkmavUeqyRySwlQdA9kKg.jpeg"><img src="imagenes/whatssap-logo.png" alt="WhatsApp"></a>
+      <a href="mailto:lucamastriota@gmail.com"><img src="imagenes/mail-logo.png" alt="Gmail"></a>
+      <a href="https://www.instagram.com/lucamastriota/"><img src="imagenes/insta-logo.png" alt="Instagram"></a>
+    </footer>
+
+  </div>
+</body>
+</html>
