@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiencia y Estudios</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: inter, sans-serif;
+      background-color: #1a0033;
+      color: white;
+    }
+
+    .contenedorestudios {
+      width: 1360px;
+      margin: 0 auto;
+      background-color: #1a0033;
+    }
+
+ header {
+      background-image: url('imagenes/header.png');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 150px;
+      width: 100%;
+    }
+
+    header nav {
+      padding-left: 150px;
+      padding-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #d6a8ff;
+    }
+
+    .contenido {
+      padding: 60px 20px;
+    }
+
+    .estudios, .experiencia {
+      margin-bottom: 60px;
+    }
+
+    .estudios h2,
+    .experiencia h2 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .contenedor-borde {
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 60px 30px;
+      margin: 0 auto 60px auto;
+      max-width: 800px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+      box-shadow: 0 0 25px rgba(162, 0, 255, 0.5);
+    }
+
+    .tarjeta {
+      background: linear-gradient(135deg, #650064, #3b0053);
+      border-radius: 20px;
+      padding: 20px 30px;
+      margin: 0 auto 30px auto;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .tarjeta p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .tarjeta p span {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .tarjeta ul {
+      padding-left: 20px;
+      margin: 10px 0 0 0;
+    }
+
+    .tarjeta ul li {
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .volver-arriba {
+      text-align: center;
+      margin: 60px 0 40px 0;
+    }
+
+    .volver-arriba a {
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 2px solid white;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .volver-arriba a:hover {
+      background: white;
+      color: #2a0033;
+    }
+
+    footer {
+      background-color: #22003a;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer p {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer a img {
+      height: 30px;
+      margin: 0 10px;
+      transition: transform 0.2s ease;
+    }
+
+    footer a img:hover {
+      transform: scale(1.1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedorestudios">
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#sobremi">Sobre mí</a></li>
+          <li><a href="experiencia-estudios.html">Experiencia laboral y estudios</a></li>
+          <li><a href="trabajos.html">Trabajos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <main class="contenido">
+      <!-- ESTUDIOS -->
+      <section class="estudios">
+        <h2>ESTUDIOS</h2>
+        <div class="contenedor-borde">
+          <div class="tarjeta">
+            <p><strong>Egresado 2018</strong><br>Secundario completo en Economía<br><span>Instituto Santa Ana<br>Bv. Ballester 4705, Villa Ballester, Buenos Aires.</span></p>
+          </div>
+          <div class="tarjeta">
+            <p><strong>02/2023 – 04/2023</strong><br>Tecnicatura en animación 3D y diseño<br><span>Universidad Nacional de San Martín<br>Martín de Irigoyen 3100, San Martín, Buenos Aires.</span></p>
+          </div>
+          <div class="tarjeta">
+            <p><strong>2023 – Presente</strong><br>Diseño gráfico<br><span>Da Vinci | Primera Escuela de Arte Multimedial<br>Av. Corrientes 2037, CABA.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCIA LABORAL -->
+      <section class="experiencia">
+        <h2>Experiencia<br>laboral</h2>
+        <div class="contenedor-borde">
+          <div class="tarjeta">
+            <p><strong>04/2023 – 11/2023</strong><br>Ayudante de cocina<br><span>Club Atlético Boca Juniors</span></p>
+            <ul>
+              <li>Preparación y organización de ingredientes.</li>
+              <li>Apoyo en el alistado y disposición de alimentos.</li>
+              <li>Mantenimiento de estándares de calidad e higiene.</li>
+              <li>Cumplimiento de normas de seguridad alimentaria.</li>
+              <li>Control y reposición de materiales e ingredientes.</li>
+            </ul>
+          </div>
+          <div class="tarjeta">
+            <p><strong>04/2024 – presente</strong><br>Asistente de ventas y Gestión Operativa<br><span>Cotillón Feliz en tu Día</span></p>
+            <ul>
+              <li>Atención al cliente personalizada.</li>
+              <li>Asesoramiento sobre productos y servicios.</li>
+              <li>Gestión y organización de inventario.</li>
+              <li>Supervisión de stock.</li>
+              <li>Manejo administrativo y operativo.</li>
+              <li>Control de pedidos y coordinación de actividades diarias.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Volver arriba -->
+    <section class="volver-arriba">
+      <a href="#top">↑ Volver Arriba</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Redes sociales</p>
+      <div class="footer-iconos">
+        <a href="https://miro.medium.com/v2/resize:fit:1200/1*rIkmavUeqyRySwlQdA9kKg.jpeg"><img src="imagenes/whatssap-logo.png" alt="WhatsApp"></a>
+        <a href="mailto:lucamastriota@gmail.com"><img src="imagenes/mail-logo.png" alt="Gmail"></a>
+        <a href="https://www.instagram.com/lucamastriota/"><img src="imagenes/insta-logo.png" alt="Instagram"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
